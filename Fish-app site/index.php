@@ -1,38 +1,11 @@
-<?php
-session_start();
-if (isset($_POST['login']) && !empty($_POST['username']) && !empty($_POST['password'])) {
-
-	$con= mysqli_connect("localhost","root","root","user");
-
-	if (mysqli_connect_errno($con))
-	{
-		echo "Failed to connect to MySQL: " . mysqli_connect_error();
-	}
-
-	$query = "SELECT * FROM login";
-	$res = $con->query($query);
-
-	if(($row = $res->fetch_assoc())!=null){
-		if($_POST['username'] == $row['username'] &&	$_POST['password'] = $row['password']){
-		$_SESSION['valid'] = true;
-		echo "successful login";
-	}
-	else{
-		echo "invalid login";
-		}
-	}
-}
-?>
-
-
+<!DOCTYPE html>
 <html lang = "en">
-
    <head>
       <title>Login Page</title>
       <link href = "css/style.css" rel = "stylesheet">
    </head>
 
-    <head>  <body>
+   <body>
       <div id = "main">
 
 		<br><br><br>
