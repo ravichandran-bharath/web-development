@@ -1,0 +1,160 @@
+/*
+html {
+  font-family: "roboto", helvetica;
+  position: relative;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  color: #444;
+}
+*/
+
+/*
+h2 {
+  margin: 1.75em 0 0;
+  font-size: 5vw;
+}
+
+h3 { font-size: 1.7em; color: #4d0000;}
+*/
+
+.v-center {
+  height: 80%;
+  width: 100%;
+  display: table;
+  position: relative;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.v-center > div {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: -10%;
+}
+
+.btn {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0.75em 1.5em;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  color: #333;
+  text-decoration: none;
+  display: inline;
+  border-radius: 4px;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+.btn-small {
+  padding: .75em 1em;
+  font-size: 0.8em;
+}
+
+.modal-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 50%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+  margin-bottom: 0em;
+  color: #444;
+  line-height: 1.5;
+  font-family: "roboto", helvetica;
+}
+@media only screen and (min-width: 32em) {
+
+.modal-box { width: 35%; }
+}
+
+
+.modal-box header,
+.modal-box .modal-header {
+  padding: 1em 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 { margin: 0; font-size: 1.5em; color: #444;}
+
+.modal-box .modal-body { padding: 1em 1.5em;}
+
+.modal-box .modal-body h4{ font-weight: normal; margin: 3x; color: #444;}
+
+.modal-box footer,
+.modal-box .modal-footer {
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: center;
+}
+
+.modal-box footer ul {
+ margin-bottom: 0em;
+ padding-bottom: 0.5em;
+} 
+
+.modal-box footer ul li { 
+	display: inline; 
+        padding: 1em;
+        text-align: left;
+        font-size: 0.6em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* iPhone, Android rules here */
+   html {line-height: 0.5; }
+  .btn {font-size: 0.8em; }
+  .modal-box {width: 95%; }
+  .modal-box header h3 {font-size: 1.2em; }
+  .modal-box footer ul {margin-bottom: 0em; }
+  .modal-box footer ul li {font-size: 0.3em; line-height: 0.3em;} 
+  .modal-box .modal-body h4{ font-weight: normal; margin: 0.1em; font-size: 0.8em;}
+}
+
+.modal-overlay {
+  opacity: 0;
+  -webkit-filter: alpha(opacity=0);
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+a.close {
+  line-height: 1;
+  font-size: 1.5em;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  text-decoration: none;
+  color: #bbb;
+}
+
+a.close:hover {
+  color: #222;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}

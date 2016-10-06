@@ -1,0 +1,84 @@
+.dropbtn {
+    background-color: white;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+     z-index: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 70%;
+ z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -500%;
+    background-color: #f9f9f9;
+    width: 600%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+  	text-align: center;
+    text-decoration: none;
+    display: block;
+    line-height: 4.5;
+ 	z-index: 1;
+}
+
+.dropdown a:hover {
+	background-color: #f1f1f1;
+	z-index: 1;
+
+}
+
+.show {display:block; z-index: 300;}
+
+#myDropdown{
+	z-index: 2;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+ 	z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+    transform: rotate(-45deg) translate(-6px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px) ;
+    transform: rotate(45deg) translate(-6px, -6px) ;
+}
+
+.buttons{
+	padding-left: 3%;
+	padding-right: 3%;
+	color: black;
+	display: inline-block;
+	text-decoration:none;
+	border-radius: 7px;
+	font-size: large;
+	border-bottom: 1px solid gray;
+}
